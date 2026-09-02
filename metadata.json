@@ -1,0 +1,6 @@
+{
+  "name": "Fiym",
+  "description": "Manifest your dreams with daily affirmations, future self alignment, sacred gratitude, and conscious guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
