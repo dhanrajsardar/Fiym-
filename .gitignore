@@ -2,6 +2,8 @@
 .gradle
 .kotlin
 /local.properties
+/.idea
+/idea/*
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -16,3 +18,4 @@
 local.properties
 .env
 debug.keystore
+/gradle-9.7.1

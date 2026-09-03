@@ -94,6 +94,7 @@ import androidx.compose.ui.window.DialogProperties
 import com.example.R
 import com.example.data.local.WealthActionItem
 import com.example.data.local.WealthIdentityStore
+import com.example.ui.components.PremiumFeatureButton
 
 data class KnowledgeLesson(
     val id: String,
@@ -366,25 +367,29 @@ fun SacredFeaturesGrid(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            CustomFeatureItem(
+            PremiumFeatureButton(
                 title = "Goals",
                 imageRes = R.drawable.ic_feat_goals_1786842414240,
                 onClick = onGoalsClick,
                 modifier = Modifier.weight(1f)
             )
-            CustomFeatureItem(
+            PremiumFeatureButton(
                 title = "Manifestation",
                 imageRes = R.drawable.ic_feat_manifest_1786842424554,
                 onClick = onManifestationClick,
                 modifier = Modifier.weight(1f)
             )
-            CustomFeatureItem(
+            PremiumFeatureButton(
                 title = "Affirmations",
-                imageRes = R.drawable.ic_feat_affirm_1786842436594,
+                imageRes = R.drawable.img_affirmation,
                 onClick = onNavigateAffirmationsClick(onAffirmationsClick),
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
+                iconTint = null,
+                iconBackground = null,
+                iconSize = 44.dp,
+                contentDescription = "Affirmations"
             )
-            CustomFeatureItem(
+            PremiumFeatureButton(
                 title = "Future Self",
                 imageRes = R.drawable.ic_feat_future_1786842449844,
                 onClick = onFutureSelfClick,
@@ -397,25 +402,25 @@ fun SacredFeaturesGrid(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            CustomFeatureItem(
+            PremiumFeatureButton(
                 title = "I AM",
                 imageRes = R.drawable.ic_feat_iam_1786842467598,
                 onClick = onIAmClick,
                 modifier = Modifier.weight(1f)
             )
-            CustomFeatureItem(
+            PremiumFeatureButton(
                 title = "Favorite",
                 imageRes = R.drawable.ic_feat_favorite_1786842481035,
                 onClick = onFavoriteClick,
                 modifier = Modifier.weight(1f)
             )
-            CustomFeatureItem(
+            PremiumFeatureButton(
                 title = "The Oath",
                 imageRes = R.drawable.ic_feat_oath_1786842491879,
                 onClick = onOathClick,
                 modifier = Modifier.weight(1f)
             )
-            CustomFeatureItem(
+            PremiumFeatureButton(
                 title = "Gratitude",
                 imageRes = R.drawable.feat_gratitude_icon_1786896132699,
                 onClick = onGratitudeClick,

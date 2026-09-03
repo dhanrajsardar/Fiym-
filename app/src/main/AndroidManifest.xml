@@ -23,7 +23,7 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MyApplication"
@@ -35,7 +35,7 @@
         </activity>
 
         <service
-            android:name=".service.FloatingOrbService"
+            android:name="com.example.service.FloatingOrbService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="specialUse">
@@ -45,7 +45,7 @@
         </service>
 
         <service
-            android:name=".service.BroForegroundService"
+            android:name="com.example.service.BroForegroundService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="specialUse">
@@ -55,13 +55,13 @@
         </service>
 
         <service
-            android:name=".service.ScreenRecordingService"
+            android:name="com.example.service.ScreenRecordingService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="mediaProjection" />
 
         <receiver
-            android:name=".receiver.BootReceiver"
+            android:name="com.example.receiver.BootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
